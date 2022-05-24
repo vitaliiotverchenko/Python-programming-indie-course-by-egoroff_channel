@@ -1,0 +1,20 @@
+import os
+
+path = 'C:\\Users\\38096\\Desktop\\UKRAINE'
+name = '02_1080_1920.png'
+
+
+# os.listdir(path) - print all files in the folder
+# os.path.isdir(path) - check if the file is a folder
+
+def search_file(path):
+    'Traverse files and find file location by name'
+    if name in os.listdir(path):
+        print('Here it is!', path + '\\' + name)
+        return
+    for i in os.listdir(path):
+        if os.path.isdir(path + '\\' + i):
+            search_file(path + '\\' + i)
+
+
+search_file(path)
