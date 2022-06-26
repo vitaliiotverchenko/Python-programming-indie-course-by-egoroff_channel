@@ -1,0 +1,7 @@
+number = int(input())
+if number == 0 or number % 20 == 0 or (number %10 in (5, 6, 7, 8, 9)) or number % 10 == 0 or 5 <= number <= 19 or 111 <= number <= 114 or 211 <= number <= 214 or 311 <= number <=314 or 411 <= number <= 414 or 511 <= number <= 514 or 611 <= number <= 614 or 711 <= number <= 714 or 811 <= number <= 814 or 911 <= number <= 914:
+    print(number, 'программистов')
+elif number == 1 or number%10 == 1:
+    print(number, 'программист')
+elif number in (2, 3, 4) or number % 10 in (2, 3, 4):
+    print(number, 'программиста')
